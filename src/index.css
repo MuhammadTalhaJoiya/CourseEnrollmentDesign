@@ -1,0 +1,106 @@
+@import './styles/variables.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basic Styles */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 gap-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-text-inverted hover:bg-primary-hover active:bg-primary
+           shadow-sm hover:shadow-md active:shadow-sm
+           active:transform active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-primary text-primary bg-transparent;
+  }
+
+  .btn-outline:hover {
+    background-color: rgba(var(--color-primary-rgb), 0.1);
+    @apply border-primary-hover text-primary-hover;
+  }
+
+  .btn-outline:active {
+    background-color: rgba(var(--color-primary-rgb), 0.2);
+    @apply transform scale-[0.98];
+  }
+
+  .input {
+    @apply w-full px-4 py-3 rounded-lg
+           text-text-primary
+           placeholder-text-secondary
+           focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary
+           transition-all duration-200;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border-primary);
+  }
+
+  .card {
+    @apply rounded-lg
+           shadow-sm hover:shadow-md
+           transition-all duration-200;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border-primary);
+  }
+
+  .card-elevated {
+    @apply rounded-lg
+           shadow-md hover:shadow-lg
+           transition-all duration-200;
+    background-color: var(--color-surface-elevated);
+    border: 1px solid var(--color-border-primary);
+  }
+
+  .link {
+    @apply text-primary hover:text-primary-hover transition-colors duration-200;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply badge bg-success/10 text-success;
+  }
+
+  .badge-error {
+    @apply badge bg-error/10 text-error;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning/10 text-warning;
+  }
+
+  .badge-info {
+    @apply badge bg-info/10 text-info;
+  }
+
+  .text-muted {
+    @apply text-text-muted;
+  }
+}
+
+/* Theme transition utility */
+@layer utilities {
+  .theme-transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+}

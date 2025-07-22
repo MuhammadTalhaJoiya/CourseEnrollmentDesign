@@ -1,0 +1,94 @@
+
+:root {
+  /* Light mode colors */
+  --color-primary: #3B82F6; /* Blue 500 */
+  --color-primary-rgb: 59, 130, 246;
+  --color-primary-hover: #2563EB; /* Blue 600 */
+  --color-primary-active: #1D4ED8; /* Blue 700 */
+  
+  /* Add primary color shades */
+  --color-primary-50: #EFF6FF;
+  --color-primary-100: #DBEAFE;
+  --color-primary-200: #BFDBFE;
+  --color-primary-300: #93C5FD;
+  --color-primary-400: #60A5FA;
+  --color-primary-500: #3B82F6;
+  --color-primary-600: #2563EB;
+  --color-primary-700: #1D4ED8;
+  --color-primary-800: #1E40AF;
+  --color-primary-900: #1E3A8A;
+  
+  /* Add similar shades for accent colors */
+  
+  --color-accent: #F97316; /* Orange 500 */
+  --color-accent-hover: #EA580C; /* Orange 600 */
+
+  --color-text-primary: #1E293B; /* Slate 900 */
+  --color-text-secondary: #64748B; /* Slate 500 */
+  --color-text-muted: #94A3B8; /* Slate 400 */
+  --color-text-inverted: #FFFFFF; /* White */
+
+  --color-background-primary: #F8FAFC; /* Slate 50 */
+  --color-background-secondary: #F1F5F9; /* Slate 100 */
+  --color-background-tertiary: #E2E8F0; /* Slate 200 */
+  --color-surface: #FFFFFF; /* White */
+  --color-surface-elevated: #FFFFFF; /* White */
+
+  --color-border-primary: #E2E8F0; /* Slate 200 */
+  --color-border-light: #E2E8F0; /* Slate 200 */
+  --color-border-dark: #334155; /* Slate 700 */
+
+  --color-success: #10B981; /* Green 500 */
+  --color-success-rgb: 16, 185, 129;
+  --color-error: #EF4444; /* Red 500 */
+  --color-error-rgb: 239, 68, 68;
+  --color-warning: #F59E0B; /* Amber 500 */
+  --color-warning-rgb: 245, 158, 11;
+  --color-info: #0EA5E9; /* Sky 500 */
+  --color-info-rgb: 14, 165, 233;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Fonts */
+  --font-heading: "Outfit";
+  --font-body: "Plus Jakarta Sans";
+}
+
+.dark {
+  /* Dark mode colors */
+  --color-primary: #60A5FA; /* Blue 400 */
+  --color-primary-rgb: 96, 165, 250;
+  --color-primary-hover: #3B82F6; /* Blue 500 */
+  --color-primary-active: #2563EB; /* Blue 600 */
+
+  --color-accent: #FB923C; /* Orange 400 */
+  --color-accent-hover: #F97316; /* Orange 500 */
+
+  --color-text-primary: #F1F5F9; /* Slate 100 */
+  --color-text-secondary: #94A3B8; /* Slate 400 */
+  --color-text-muted: #64748B; /* Slate 500 */
+  --color-text-inverted: #1E293B; /* Slate 900 */
+
+  --color-background-primary: #0F172A; /* Slate 900 */
+  --color-background-secondary: #1E293B; /* Slate 800 */
+  --color-background-tertiary: #334155; /* Slate 700 */
+  --color-surface: #1E293B; /* Slate 800 */
+  --color-surface-elevated: #293548; /* Slate 700 */
+
+  --color-border-primary: #334155; /* Slate 700 */
+  --color-border-light: #E2E8F0; /* Slate 200 */
+  --color-border-dark: #334155; /* Slate 700 */
+
+  --color-success: #34D399; /* Green 400 */
+  --color-success-rgb: 52, 211, 153;
+  --color-error: #F87171; /* Red 400 */
+  --color-error-rgb: 248, 113, 113;
+  --color-warning: #FBBF24; /* Amber 400 */
+  --color-warning-rgb: 251, 191, 36;
+  --color-info: #38BDF8; /* Sky 400 */
+  --color-info-rgb: 56, 189, 248;
+}
